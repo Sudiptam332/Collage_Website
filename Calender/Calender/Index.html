@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEM Holiday List</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<style>
+.header {
+    text-align: center;
+}
+
+.head h2 {
+    width: 100%;
+    height: 35px;
+    background: rgba(224, 22, 39, 0.863);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.table {
+    border: 5px solid rgb(5, 93, 74);
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    background: rgb(71, 185, 230);
+}
+
+td {
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(42, 13, 78);
+    width: 230px;
+    border-radius: 15px;
+    color: white;
+}
+
+.back {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.back button {
+    width: 8%;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.footer {
+    display: flex;
+}
+</style>
+<body>
+    <table class="table table-bordered table-striped table-hover">
+        <tbody>
+            <tr>
+                <td>
+                    <p><strong>Name of Holidays</strong></p>
+                </td>
+                <td>
+                    <p><strong>Date(s)</strong></p>
+                </td>
+                <td>
+                    <p><strong>Day(s) of the week</strong></p>
+                </td>
+                <td>
+                    <p><strong>No. of Day(s)</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>New Year&rsquo;s Day</p>
+                </td>
+                <td>
+                    <p>01.01.2021</p>
+                </td>
+                <td>
+                    <p>Friday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Birthday of Swami Vivekananda</p>
+                </td>
+                <td>
+                    <p>12.01.2021</p>
+                </td>
+                <td>
+                    <p>Tuesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Birthday of Netaji</p>
+                </td>
+                <td>
+                    <p>23.01.2021</p>
+                </td>
+                <td>
+                    <p>Saturday</p>
+                </td>
+                <td>
+                    <p>0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Republic Day</p>
+                </td>
+                <td>
+                    <p>26.01.2021</p>
+                </td>
+                <td>
+                    <p>Tuesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Saraswati Puja (Sree Panchami)</p>
+                </td>
+                <td>
+                    <p>16.02.2021</p>
+                </td>
+                <td>
+                    <p>Tuesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Dol Yatra</p>
+                </td>
+                <td>
+                    <p>28.03.2021</p>
+                </td>
+                <td>
+                    <p>Sunday</p>
+                </td>
+                <td>
+                    <p>0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Holi</p>
+                </td>
+                <td>
+                    <p>29.03.2021</p>
+                </td>
+                <td>
+                    <p>Monday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Good Friday</p>
+                </td>
+                <td>
+                    <p>02.04.2021</p>
+                </td>
+                <td>
+                    <p>Friday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Birthday of Dr. B.R. Ambedkar</p>
+                </td>
+                <td>
+                    <p>14.04.2021</p>
+                </td>
+                <td>
+                    <p>Wednesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Bengali New Year&#8217;s Day</p>
+                </td>
+                <td>
+                    <p>15.04.2021</p>
+                </td>
+                <td>
+                    <p>Thursday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>*May Day</p>
+                </td>
+                <td>
+                    <p>01.05.2021</p>
+                </td>
+                <td>
+                    <p>Saturday</p>
+                </td>
+                <td>
+                    <p>0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>**Id-ul-Fitr</p>
+                </td>
+                <td>
+                    <p>14.05.2021</p>
+                </td>
+                <td>
+                    <p>Friday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Buddha Purnima</p>
+                </td>
+                <td>
+                    <p>26.05.2021</p>
+                </td>
+                <td>
+                    <p>Wednesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>**Id-ul-Zuha (BakriId)</p>
+                </td>
+                <td>
+                    <p>21.07.2021</p>
+                </td>
+                <td>
+                    <p>Wednesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Independence Day</p>
+                </td>
+                <td>
+                    <p>15.08.2021</p>
+                </td>
+                <td>
+                    <p>Sunday</p>
+                </td>
+                <td>
+                    <p>0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Muharram</p>
+                </td>
+                <td>
+                    <p>19.08.2021</p>
+                </td>
+                <td>
+                    <p>Thursday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Janmastami</p>
+                </td>
+                <td>
+                    <p>30.08.2021</p>
+                </td>
+                <td>
+                    <p>Monday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Biswakarma Puja</p>
+                </td>
+                <td>
+                    <p>17.09.2021</p>
+                </td>
+                <td>
+                    <p>Friday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Birthday of Gandhiji</p>
+                </td>
+                <td>
+                    <p>02.10.2021</p>
+                </td>
+                <td>
+                    <p>Saturday</p>
+                </td>
+                <td>
+                    <p>0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Mahalaya</p>
+                </td>
+                <td>
+                    <p>06.10.2021</p>
+                </td>
+                <td>
+                    <p>Wednesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Durga Puja &#8211; Maha Sasthi</p>
+                </td>
+                <td>
+                    <p>11.10.2021</p>
+                </td>
+                <td>
+                    <p>Monday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Durga Puja &#8211; Maha Saptami</p>
+                </td>
+                <td>
+                    <p>12.10.2021</p>
+                </td>
+                <td>
+                    <p>Tuesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Durga Puja &#8211; Maha Astami</p>
+                </td>
+                <td>
+                    <p>13.10.2021</p>
+                </td>
+                <td>
+                    <p>Wednesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Durga Puja &#8211; Maha Nabami</p>
+                </td>
+                <td>
+                    <p>14.10.2021</p>
+                </td>
+                <td>
+                    <p>Thursday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Dussehra (Vijaya Dashami)</p>
+                </td>
+                <td>
+                    <p>15.10.2021</p>
+                </td>
+                <td>
+                    <p>Friday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Fateha-Dwaz-Daham</p>
+                </td>
+                <td>
+                    <p>19.10.2021</p>
+                </td>
+                <td>
+                    <p>Tuesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Lakshmi Puja</p>
+                </td>
+                <td>
+                    <p>20.10.2021</p>
+                </td>
+                <td>
+                    <p>Wednesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><em>Kali Puja</em> / Diwali</p>
+                </td>
+                <td>
+                    <p>04.11.2021</p>
+                </td>
+                <td>
+                    <p>Thursday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Bhatridwitya</p>
+                </td>
+                <td>
+                    <p>06.11.2021</p>
+                </td>
+                <td>
+                    <p>Saturday</p>
+                </td>
+                <td>
+                    <p>0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Chhat Puja</p>
+                </td>
+                <td>
+                    <p>10.11.2021</p>
+                </td>
+                <td>
+                    <p>Wednesday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Guru Nanak&#8217;s Birthday</p>
+                </td>
+                <td>
+                    <p>19.11.2021</p>
+                </td>
+                <td>
+                    <p>Friday</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Christmas Day</p>
+                </td>
+                <td>
+                    <p>25.12.2021</p>
+                </td>
+                <td>
+                    <p>Saturday</p>
+                </td>
+                <td>
+                    <p>0</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

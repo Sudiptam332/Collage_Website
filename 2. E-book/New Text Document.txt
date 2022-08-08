@@ -1,0 +1,87 @@
+.demo__hover-1 {
+    top: 0;
+}
+
+.demo__hover-1 a:hover~.demo__highlighter {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.demo__hover-1 a:hover~.demo__highlighter .demo__elems {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.demo__hover-2 {
+    top: 7rem;
+}
+
+.demo__hover-2:hover~.demo__highlighter {
+    -webkit-transform: translateY(7rem);
+    transform: translateY(7rem);
+}
+
+.demo__hover-2:hover~.demo__highlighter .demo__elems {
+    -webkit-transform: translateY(-7rem);
+    transform: translateY(-7rem);
+}
+
+.demo__hover-3 {
+    top: 14rem;
+}
+
+.demo__hover-3:hover~.demo__highlighter {
+    -webkit-transform: translateY(14rem);
+    transform: translateY(14rem);
+}
+
+.demo__hover-3:hover~.demo__highlighter .demo__elems {
+    -webkit-transform: translateY(-14rem);
+    transform: translateY(-14rem);
+}
+
+.demo__hover-4 {
+    top: 21rem;
+}
+
+.demo__hover-4:hover~.demo__highlighter {
+    -webkit-transform: translateY(21rem);
+    transform: translateY(21rem);
+}
+
+.demo__hover-4:hover~.demo__highlighter .demo__elems {
+    -webkit-transform: translateY(-21rem);
+    transform: translateY(-21rem);
+}
+
+.demo__highlighter {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    width: 34rem;
+    height: 6.5rem;
+    background: #39A5F7;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+    transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+    transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+    transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43), -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+}
+
+.demo__highlighter .demo__elems {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+    transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+    transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+    transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43), -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+}
+
+.demo__highlighter .demo__elem {
+    color: #fff;
+    border: none;
+}
